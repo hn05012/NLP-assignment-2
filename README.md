@@ -33,6 +33,7 @@ To install the necessary dependencies, run the following:
 ```bash
 pip install faiss-cpu sentence-transformers
 
+```
 
 ## Usage
 

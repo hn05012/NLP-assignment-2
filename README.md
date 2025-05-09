@@ -45,3 +45,43 @@ pip install faiss-cpu sentence-transformers
 ```{python}
 from retriever import Retriever
 ```
+
+### 2. Create an Instance of the Retriever:
+
+
+```{python}
+retriever = Retriever(chunk_size=128)
+```
+
+### 3. Add Documents:
+
+
+```{python}
+documents = [
+    "Machine learning is a subset of artificial intelligence.",
+    "Natural language processing enables computers to understand and generate human language."
+]
+retriever.add_documents(documents)
+```
+
+### 4. Query the Retriever:
+
+
+```{python}
+query = "What is machine learning?"
+results = retriever.query(query, top_k=1)
+print(results) 
+
+```
+
+
+### 5. Save and Load the Index
+
+
+```{python}
+
+retriever.save("retriever_index")
+
+retriever.load("retriever_index")
+
+```

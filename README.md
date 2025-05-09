@@ -40,5 +40,6 @@ pip install faiss-cpu sentence-transformers
 
 ### 1. Import the Retriever class:
 
-```python
+```python 
 from retriever import Retriever
+```

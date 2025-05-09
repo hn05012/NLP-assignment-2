@@ -32,3 +32,13 @@ To install the necessary dependencies, run the following:
 
 ```bash
 pip install faiss-cpu sentence-transformers
+
+
+## Usage
+
+## Step by Step Guide
+
+### 1. Import the Retriever class:
+
+```python
+from retriever import Retriever
